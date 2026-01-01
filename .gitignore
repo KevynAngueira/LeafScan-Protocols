@@ -1,0 +1,14 @@
+# OS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+
+# Exports
+exports/*.pdf
+exports/*.docx
+
+# Temporary files
+*.tmp
+
