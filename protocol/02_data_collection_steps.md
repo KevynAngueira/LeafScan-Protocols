@@ -1,7 +1,8 @@
 # 03 – Data Collection Steps
 
-This document defines the **exact procedures** for collecting data using the LeafScan system.  
+This document defines the **in-field execution steps** for LeafScan data collection.
 It is designed to remove ambiguity during field work while also serving as a formal, auditable protocol for system validation, benchmarking, and external review.
+All preparation steps are assumed complete per **01 – Materials and Preparation**.
 
 Two data collection modes are defined:
 
@@ -23,61 +24,7 @@ All plant and field selection decisions should follow standard adjusting guidanc
 
 ---
 
-## Section A – Operational Setup (Pre-Field)
-
-### Step 1: Personnel Readiness
-
-**Purpose**  
-To ensure the data collector can correctly operate LeafScan and recognize unusable data before submission.
-
-**Description**  
-LeafScan assumes the adjuster is already trained on the mobile app and understands basic data quality checks.  
-This step confirms readiness rather than providing operational training.
-
-**Procedure**  
-1. Confirm the data collector has completed LeafScan training.  
-2. Confirm the data collector understands:  
-   - How to use the LeafScan physical tool  
-   - What a valid LeafScan video looks like  
-   - When a scan should be rejected and re-captured  
-3. Confirm the data collector has completed OpenMobile training.  
-4. Confirm the data collector understands:  
-   - How to create Plant and Leaf Annotations  
-   - Where to record leaf number, leaf length, and base widths  
-   - How to attach LeafScan videos to leaf annotations
-
-**System Connection**  
-Operator variability is a dominant source of data failure in field-based systems.  
-Ensuring baseline competency reduces invalid captures, limits unnecessary cloud inference, and improves consistency across adjusters, regions, and seasons.
-
----
-
-### Step 2: Required Equipment Check
-
-**Purpose**  
-To ensure all required tools are present and functional before data collection begins.
-
-**Description**  
-LeafScan relies on a controlled capture setup. Missing or malfunctioning equipment can invalidate an entire session.
-
-**Procedure**  
-1. Confirm possession of:  
-   - LeafScan physical tool  
-   - Mobile device with OpenMobile installed  
-   - Precision ruler or approved measurement device  
-   - Fine-tip marker or approved marking device  
-2. Verify device battery is at least 50%.  
-3. Verify sufficient local storage is available for video capture.
-
-**System Connection**  
-Incomplete or interrupted sessions introduce sampling bias and data loss.  
-This check protects operational reliability and dataset completeness.
-
----
-
-## Section B – Field Data Collection Protocol
-
-### Step 3: Select a Representative Plant
+## Step 1: Select a Representative Plant
 
 **Purpose**  
 To select a plant that accurately reflects field-level defoliation and is suitable for LeafScan measurement.
@@ -110,14 +57,14 @@ Allowing a formal fallback to visual estimation prevents biased datasets caused 
 
 ---
 
-### Step 4: Per-Leaf Processing
+## Step 2: Per-Leaf Processing
 
 The following steps are performed for each leaf on the selected plant.  
 LeafScan is designed to operate **non-destructively**, with leaves remaining intact and attached to the plant during video capture.
 
 ---
 
-#### Step 4.1: Environment Check (Immediately Before Capture)
+### Step 2.1: Environment Check (Immediately Before Capture)
 
 **Purpose**  
 To ensure environmental conditions will not interfere with LeafScan video quality.
@@ -137,7 +84,7 @@ Performing this check immediately before capture reduces silent failures caused 
 
 ---
 
-#### Step 4.2: LeafScan Video Capture
+### Step 2.2: LeafScan Video Capture
 
 **Purpose**  
 To digitally capture the defoliated leaf in a controlled and repeatable manner while the leaf remains intact and attached to the plant.
@@ -163,7 +110,7 @@ Capturing the leaf while attached preserves natural tension and alignment, reduc
 
 ---
 
-#### Step 4.3: Video Validation (Required Before Measurement)
+### Step 2.3: Video Validation (Required Before Measurement)
 
 **Purpose**  
 To ensure the captured video is acceptable before any further handling of the leaf.
@@ -192,7 +139,7 @@ Early rejection protects downstream inference and dataset integrity.
 
 ---
 
-#### Step 4.4: Leaf Identification and Physical Measurements
+### Step 2.4: Leaf Identification and Physical Measurements
 
 **Purpose**  
 To record the physical measurements required to interpret the LeafScan video and estimate the leaf’s original area.
@@ -229,7 +176,7 @@ Explicit damage flags allow the system to distinguish missing data from true geo
 
 ---
 
-### Step 5: Repeat Across Leaves and Plants
+## Step 5: Repeat Across Leaves and Plants
 
 **Purpose**  
 To collect sufficient data for reliable field-level estimates.
@@ -244,7 +191,7 @@ The adjuster repeats per-leaf processing for each leaf on the selected plant, th
 
 ---
 
-### Step 6: Data Synchronization and Results Retrieval
+## Step 6: Data Synchronization and Results Retrieval
 
 **Purpose**  
 To securely upload collected data, complete inference, and retrieve results.
@@ -278,54 +225,7 @@ Explicit synchronization ensures data integrity, traceability, and consistent li
 
 ---
 
-## Section A – Validation Setup
-
-### Step 1: Personnel Readiness
-
-**Purpose**  
-Ensure adjusters are trained to collect validation-grade data and operate commercial leaf area meters.
-
-**Description**  
-In addition to standard LeafScan training, validation personnel must understand:  
-- Commercial leaf area meter usage  
-- Controlled, repeatable defoliation techniques  
-- Edge case and failure-mode testing  
-- Proper metadata recording for benchmarking
-
-**Procedure**  
-1. Confirm personnel certification for LeafScan validation.  
-2. Confirm training on leaf area meter operation.  
-3. Confirm understanding of simulated defoliation procedures.  
-4. Confirm understanding of the task assignment/quota sheet for edge/failure case collection.
-
-**System Connection**  
-Trained personnel ensure reliable ground-truth measurements, which form the reference for evaluating LeafScan performance and robustness.
-
----
-
-### Step 2: Equipment Check
-
-**Purpose**  
-Ensure all standard and validation-specific tools are present.
-
-**Description**  
-Validation requires all operational tools plus:  
-- Commercial leaf area meter  
-- Calibration reference (if applicable)  
-- Temporary marking tools (fine-tip marker, tape)  
-- Tools for controlled defoliation (scissors, hole punch)  
-- Notebook or CSV file for recording pre/post measurements
-
-**Procedure**  
-1. Verify all operational equipment is ready (Step 2, Operational Protocol).  
-2. Verify validation-specific tools are present and functional.
-
-**System Connection**  
-Validation measurements depend on calibrated, reliable instruments for benchmarking accuracy.
-
----
-
-### Step 3: Task Assignment / Edge Case Quotas
+## Task Assignment / Edge Case Quotas
 
 **Purpose**  
 Ensure systematic coverage of edge and failure cases for benchmarking.
@@ -350,14 +250,14 @@ A separate file will describe the purpose and expected outcome for each transfor
 
 ---
 
-## Section B – Leaf-Level Validation Protocol (Validation Extension)
+## Step 2: Per-Leaf Processing
 
-**Timing Note:** All validation measurements happen **before Step 4.1 (Environment Check)**.  
-All previous steps for plant selection are followed in regular order.
+The following steps are are interleaved extensions to the **Per-Leaf Processing Operational Protocols**.  
+All 3 steps must be completed before proceding to **Step 2.1 (Environment Check)**
 
 ---
 
-### Step 4a: Pre-Defoliation Leaf Area Measurement
+## Step 2.a: Pre-Defoliation Leaf Area Measurement
 
 **Purpose**  
 Record baseline leaf area to quantify LeafScan prediction error.
@@ -366,7 +266,7 @@ Record baseline leaf area to quantify LeafScan prediction error.
 Use a commercial leaf area meter to measure the intact leaf before any simulated or natural defoliation.
 
 **Timing**  
-**Before Step 4.1 (Environment Check)**
+**Before Step 2.1 (Environment Check)**
 
 **Protocol**  
 1. Assign Leaf ID, Plant ID, and Field ID (record in CSV or notebook).  
@@ -379,7 +279,7 @@ Provides ground-truth reference for evaluating LeafScan’s post-defoliation pre
 
 ---
 
-### Step 4b: Simulated Defoliation
+### Step 2.b: Simulated Defoliation
 
 **Purpose**  
 Create controlled, repeatable leaf damage for benchmarking reconstruction under varied conditions.
@@ -388,7 +288,7 @@ Create controlled, repeatable leaf damage for benchmarking reconstruction under 
 Defoliation is applied intentionally, following patterns from the task assignment sheet.
 
 **Timing**  
-Immediately **after Step 4a (Pre-defoliation area)** and **before Step 4.1 (Environment Check)**.
+Immediately **after Step 2.a (Pre-defoliation area)** and **before Step 2.1 (Environment Check)**.
 
 **Protocol**  
 1. Select defoliation pattern according to the assignment sheet.  
@@ -400,7 +300,7 @@ Controlled defoliation allows systematic evaluation of LeafScan accuracy across 
 
 ---
 
-### Step 4c: Post-Defoliation Leaf Area Measurement
+### Step 2.c: Post-Defoliation Leaf Area Measurement
 
 **Purpose**  
 Record remaining leaf area after defoliation to enable accurate defoliation benchmarking.
@@ -409,7 +309,7 @@ Record remaining leaf area after defoliation to enable accurate defoliation benc
 Use the same leaf area meter as pre-defoliation measurement.
 
 **Timing**  
-Immediately **after Step 4b (Simulated Defoliation)** and **before Step 4.1 (Environment Check)**.
+Immediately **after Step 2.b (Simulated Defoliation)** and **before Step 2.1 (Environment Check)**.
 
 **Protocol**  
 1. Measure leaf area with the meter.  
@@ -422,14 +322,14 @@ Together with pre-defoliation area, establishes true defoliation percentage for 
 
 ---
 
-### Step 5: Post-Collection Review
+## Step 3: Post-Collection Review
 
 - Verify all validation data (pre/post area, defoliation, base widths, leaf number, leaf length, task assignments) are complete.  
 - Flag anomalies.
 
 ---
 
-### Step 6: Data Synchronization
+### Step 4: Data Synchronization
 
 - Upload all videos, annotations, and CSV records to cloud.  
 - Wait for inference to finish.  

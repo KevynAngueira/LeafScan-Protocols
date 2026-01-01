@@ -1,9 +1,16 @@
 # Operational Data Collection Checklist  
 (LeafScan – Intended Use)
 
+This checklist verifies that **all required operational steps** were completed
+in the correct order during LeafScan data collection.
+
+---
+
 ## A. Personnel Requirements
-- [ ] Data collector is trained on LeafScan tool usage
-- [ ] Data collector understands LeafScan video pass/fail criteria
+- [ ] Data collector trained on LeafScan tool usage
+- [ ] Data collector understands LeafScan **video pass/fail criteria**
+- [ ] Data collector understands **two-factor video validation**  
+      (system + adjuster visual review)
 
 ---
 
@@ -22,53 +29,65 @@
 ---
 
 ## C. Environment Check (Per Session)
-- [ ] Adequate ambient lighting for clear leaf visibility
-- [ ] No direct glare or reflections on the tool surface or view window
-- [ ] Background behind the tool contains **no red, pink, or tool-colored objects**
-- [ ] Wind conditions allow the leaf to be held steady during scanning
+- [ ] Adequate ambient lighting
+- [ ] No glare on tool surface or view window
+- [ ] Background contains **no red, pink, or tool-colored objects**
+- [ ] Wind conditions allow leaf to be held steady
 
 ---
 
-## D. Leaf Eligibility Check (Per Leaf)
+## D. Leaf Selection (Per Leaf)
 - [ ] Leaf is from a corn plant
-- [ ] Leaf is accessible without damaging the plant
-- [ ] Leaf fits fully within the LeafScan tool channel
-- [ ] Leaf can be held **taut and flat** during scanning
-- [ ] Leaf is sufficiently intact to allow a continuous scan
+- [ ] Leaf accessible without damaging the plant
+- [ ] Leaf fits fully within LeafScan channel
+- [ ] Leaf can be held **taut and flat**
+- [ ] Leaf sufficiently intact for a continuous scan
 
 ---
 
 ## E. Base Width Measurements (First X Inches)
-- [ ] Leaf collar (base) identified
+- [ ] Leaf collar identified as **first base width**
 - [ ] Leaf held taut and flat at the base
-- [ ] Base widths marked (1 inch from previous segment) using approved marking procedure
-- [ ] Base widths measured using precision ruler or approved reference
+- [ ] Base widths marked at **1-inch intervals from previous mark**
+- [ ] Base widths measured with approved tool
 - [ ] Base width values recorded in metadata
-- [ ] Ensure all X base widths are captured
+- [ ] Damaged base widths flagged (if applicable)
+
+> Note: If too many base widths are damaged, the system may reject the leaf
+and a new representative plant must be selected.
 
 ---
 
 ## F. LeafScan Video Capture
-- [ ] Leaf oriented correctly within the tool
-- [ ] **Entire LeafScan tool** fully visible in the video frame
-- [ ] View window unobstructed throughout recording
-- [ ] Leaf slides continuously through the view window
-- [ ] No pauses, reversals, twisting, or folding during the scan
-- [ ] Entire remaining leaf length scanned in a single pass
+- [ ] Leaf oriented correctly in tool
+- [ ] **Entire LeafScan tool visible** in frame
+- [ ] View window unobstructed
+- [ ] Leaf slides continuously through view window
+- [ ] No pauses, reversals, folding, or twisting
+- [ ] Entire remaining leaf scanned in one pass
 
 ---
 
-## G. On-Device Validation
+## G. Video Validation (Two-Factor)
+
+### System Validation
 - [ ] Tool presence validation passed
 - [ ] Leaf motion validation passed
-- [ ] Video accepted for upload by the application
+- [ ] Video accepted by application
+
+### Adjuster Visual Review
+- [ ] Video reviewed immediately after capture
+- [ ] Video meets all capture criteria
+- [ ] Video manually accepted or failed by adjuster
+
+> A video must pass **both** system and adjuster review.
 
 ---
 
 ## H. Post-Capture Confirmation
-- [ ] Video playback verified immediately after capture
-- [ ] Leaf ID correctly assigned
-- [ ] Plant ID correctly assigned
-- [ ] Field ID correctly assigned
-- [ ] Base width measurement present in metadata
+- [ ] Leaf ID assigned correctly
+- [ ] Plant ID assigned correctly
+- [ ] Field ID assigned correctly
+- [ ] Base width metadata present
+- [ ] Video stored successfully
 
