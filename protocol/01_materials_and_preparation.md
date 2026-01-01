@@ -29,11 +29,11 @@ Missing, substituted, or malfunctioning equipment can invalidate an entire colle
 **Required Equipment**
 - LeafScan physical tool  
 - Mobile device with OpenMobile installed  
-- Precision ruler (≥ 1/16 inch or 1 mm resolution)  
+- Precision ruler (>= 1/16 inch or 1 mm resolution)  
 - Leaf-safe marking method (fine-tip marker or tape)
 
 **Device Readiness**
-1. Confirm mobile device battery ≥ 50%.  
+1. Confirm mobile device battery >= 50%.  
 2. Confirm sufficient local storage for video capture.  
 3. Confirm camera lens is clean and unobstructed.
 
